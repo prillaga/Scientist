@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Image Upload</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Medical Image</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="uploadButton">Upload Image</button>
+        <div id="result"></div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="centered-content">
+                    <img src="https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=2000" alt="Doctor Image" class="doctor-image">
+                    <p>Your scan has been reviewed by our doctor.</p>
+                    <button id="openChatButton">Chat with a Doctor</button>
+                </div>
+            </div>
+        </div>
+        <!-- Support Chat -->
+        <div id="chatPopup" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeChat">&times;</span>
+                <h2>Live Chat with a Doctor</h2>
+                <div id="chatMessages"></div>
+                <textarea id="chatInput" placeholder="Type your message..."></textarea>
+                <button id="sendChat">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
